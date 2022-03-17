@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FeuillesDeStyle/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Portfolio - Marco Crotti-Hem</title>
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+});
+
+    </script>
+    <!-- Menu Horizontal-->
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Mon Portfolio</a>
+            <li class="nav-item"><a href="Presentation.html">Présentation</a>
+            <li class="nav-item"><a href="">Mon Parcours</a>
+            <li class="nav-item"><a href="">Mes expériences</a>
+            <li class="nav-item"><a href="">Ma veille Technologique</a>      
+    </nav> 
+         </ul>
+         <div class="animated-title">
+            <div class="text-top">
+              <div>
+                <span>Bienvenue</span>
+                <span>sur mon Portfolio !</span>
+              </div>
+            </div>
+            <div class="text-bottom">
+                <div>
+                <a href="Presentation.html" class="coeur"> <b> Découvrir </b></a>
+            </div>
+            </div>
+          </div>
+
+        <!-- Boutton -->
+
+</body>
+
+</html>
+
+
+
+

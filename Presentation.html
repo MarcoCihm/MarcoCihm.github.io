@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FeuillesDeStyle/style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Présentations - Marco Crotti-Hem</title>
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+});
+
+    </script>
+    <!-- Menu Horizontal-->
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Mon Portfolio</a>
+            <li class="nav-item"><a href="Presentation.html">Présentation</a>
+            <li class="nav-item"><a href="">Mon Parcours</a>
+            <li class="nav-item"><a href="">Mes expériences</a>
+            <li class="nav-item"><a href="">Ma veille Technologique</a>      
+    </nav> 
+
+    <div class="container">
+        <div class="circle"></div>
+        <h1> </br> Présentation </h1>
+        <p> </br> Bonjour à toi et bienvenue sur mon Portfolio (ou portofolio pour les plus intimes) ! </br>
+            <b> Je m'appelle Marco Crotti-Hem,</b> j'ai 19 ans & je suis actuellement en seconde année de <b>BTS SIO (Services Informatiques aux Organisations), </b>
+        Option SLAM (Solutions Logicielles et Application Métier) spécialisée en programmation, au lycée Parc des Loges à Evry-Courcouronnes.</p>   
+
+        <br> <i>  Viens découvrir mon CV pour plus de détails ! </div> </i>
+    </div>
+
+
