@@ -1,0 +1,76 @@
+*{ /*appliquer à tout le site*/
+  padding: 0px; /*écarts de remplissage*/
+  margin: 0px; /*marges*/
+  font-family: Arial;
+ }
+ 
+.banniere {
+  width: 100%; /*largeur*/
+  height: auto;
+}
+	
+.menu ul li a {
+  text-decoration:none; /*enlever le soulignage*/
+  margin-left:18px;
+  float:left;   
+  min-width:22%;
+  background: linear-gradient(90deg, #00157d, #0185cf); /* fond en dégradé*/
+  color:black;
+  text-align:center;
+  padding:10px;
+  border:3px solid;	
+}
+
+.menu li {
+  margin-left:2px;
+}
+
+.menu ul {
+  list-style-type:none;
+ }
+
+.menu a:hover { /*effet lors d'un survol avec la souris*/	
+  color: #ffe000;
+  box-shadow: 4px 4px 2px #ffe000; /*ombre*/
+  font-size: 20px;
+  background: linear-gradient(180deg, #00c5ff, #0185cf);
+}
+ 
+ .Grandeboite {
+  min-width: 95%;
+  max-width: 100%;
+  height: auto;
+  margin-left:5%;
+ }
+
+.Boites {
+  width: 400px;
+  border: 5px solid #ff9d2e; 
+  box-shadow: 8px 8px 40px #ffff2e;
+  padding: 30px 20px;
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  margin: 0 auto;
+}
+
+.Boites img:hover {
+  box-shadow: 5px 5px 20px black;
+}
+
+.Boites2 {
+  width: 85%;
+  border: 5px solid #004dff;
+  box-shadow: 10px 10px 3px #004dff;
+  padding: 30px 20px;
+  display: inline-block; /*affichage*/
+  vertical-align: middle;
+}
+
+.resume {
+	line-height: 20px;
+}
+
+.fondarticle {
+	background-color: #f7fdfd;
+}

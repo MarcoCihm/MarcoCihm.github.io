@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FeuillesDeStyle/style2.css">
+    <link rel="stylesheet" href="FeuillesDeStyle/dates.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Présentations - Marco Crotti-Hem</title>
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+});
+
+    </script>
+    
+
+    <!-- Menu Horizontal-->
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Mon Portfolio</a>
+            <li class="nav-item"><a href="Presentation.html">Présentation</a>
+            <li class="nav-item"><a href="Parcours.html">Mon Parcours</a>
+            <li class="nav-item"><a href="Projets.html">Mes expériences & Projets</a>
+            <li class="nav-item"><a href="AccueilVeille.html">Ma veille Technologique</a>      
+    </nav>         
+
+    <!--dates-->
+    <div class="container">
+        <h1>Mes Stages</h1>
+      <a href="sipej.html" style="text-decoration: none">
+      <div class="job">
+        <h2>SIPEJ <span>Janvier & Février 2022 : 5 semaines</span></h2> </br>
+        <p>Stage concernant un site web avec de nouvelles demandes. Implémentations de formulaires à conditions & d'envois de mails automatisés.</p>
+      </div>
+    </a>
+    <a href="conseilEss.html" style="text-decoration: none">
+      <div class="job">
+        <h2>Conseil de L'essonne <span>Juin 2021 : 6 semaines</span></h2>
+    </br><p>Support intranet, Outils Office 365, Gestion d’espaces Collaboratifs en ligne, Numérisation de démarches administratives.</p>
+      </div>
+    </a>
+    <a href="conseilEss.html" style="text-decoration: none">
+      <div class="job">
+        <h2>Accor Informatique <span>2018/19/20 : 14 semaines</span></h2> </br>
+        <p>Créations de pages web HTML/CSS/Javascript, Support intranet, Outils Office 365, Encodage vidéo pour une durée de 14 semaines. </p>
+      </div>
+    </a>
+      <h1>Mes Formations</h1>
+      
+      <div class="job">
+        <h2>Lycée Parc des Loges <span>2020 - Maintenant</span></h2> </br>
+        <p>BTS SIO (Systèmes d'informations aux organisations) option SLAM</p>
+      </div>
+
+      <div class="job">
+        <h2>Lycée Georges Brassens <span>2017 - 2020</span></h2> </br>
+        <p>Bac Professionnel Systèmes Numériques en option RISC, Mention Bien</p>
+      </div>
+      
+    </div>
+
+    
+
+                
+</html>
