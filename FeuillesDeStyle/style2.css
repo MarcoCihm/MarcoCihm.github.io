@@ -133,7 +133,7 @@ body {
 .circle{
     width:200px;
     height:200px;
-    background : url(../images/tete.jpg);
+    background : url(../images/tete.png);
     background-size: 100% 100%;
     border-radius:50%;
     float:left;
