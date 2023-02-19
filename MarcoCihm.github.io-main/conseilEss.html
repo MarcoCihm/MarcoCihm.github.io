@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FeuillesDeStyle/style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Présentations - Marco Crotti-Hem</title>
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+});
+
+    </script>
+    <!-- Menu Horizontal-->
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Mon Portfolio</a>
+            <li class="nav-item"><a href="Presentation.html">Présentation</a>
+            <li class="nav-item"><a href="Parcours.html">Mon Parcours</a>
+            <li class="nav-item"><a href="Projets.html">Mes expériences & Projets</a>
+            <li class="nav-item"><a href="AccueilVeille.html">Ma veille Technologique</a>      
+    </nav> 
+
+    
+
+    <div class="container2">
+        <img src="images/ess1.png" width="500" height="350"> 
+        <img src="images/ess2.png" width="400" height="400"> 
+        
+        <h1> </br>&nbsp;&nbsp; Présentation Conseil Départemental de l'Essonne </h1> 
+        &nbsp;&nbsp; Suite à un appel téléphonique et une candidature spontanée, mon profil a retenu
+        l’attention de la direction du Service Jeunesse, qui avait comme besoin de mettre en
+        &nbsp;&nbsp;place un espace collaboratif en ligne entre les différents services de la collectivité
+        Cet espace collaboratif a pour but de devenir un moyen rapide de communications
+        &nbsp;&nbsp;entre les collègues et les autres services.
+        Cet intranet doit rassembler de nombreux fonctionnalités, utilisables et accessibles à
+        l’ensemble des employés. 
+
+        <h1> </br> &nbsp;&nbsp; Informations  </h1>
+        &nbsp;&nbsp;  <b>Languages utilisés : </b> Hébergeurs & Outils Office 365 </br>
+        &nbsp;&nbsp; <b>Date : </b> Juin 2021
+        &nbsp;&nbsp; <b>Réalisé avec :</b> Individuellement
+ </br> </br>  <h1>&nbsp;&nbsp;Compétences &#128187;
+</h1>
+
+  
+
+</br> &nbsp;&nbsp;&nbsp;&nbsp;- Organiser son développement professionnel
+</br>   &nbsp;&nbsp;&nbsp;&nbsp;- Travailler en mode projet
+</br>   &nbsp;&nbsp;&nbsp;&nbsp;- Développer la présence en ligne de l’organisation
+</br>   &nbsp;&nbsp;&nbsp;&nbsp;- Gérer le patrimoine informatique
+</br> </br> </br> 
+         </div>
+
+        
+    </div>
+
+    
+
+

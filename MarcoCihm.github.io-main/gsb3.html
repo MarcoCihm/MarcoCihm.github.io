@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FeuillesDeStyle/style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Présentations - Marco Crotti-Hem</title>
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+});
+
+    </script>
+    <!-- Menu Horizontal-->
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Mon Portfolio</a>
+            <li class="nav-item"><a href="Presentation.html">Présentation</a>
+            <li class="nav-item"><a href="Parcours.html">Mon Parcours</a>
+            <li class="nav-item"><a href="Projets.html">Mes expériences & Projets</a>
+            <li class="nav-item"><a href="AccueilVeille.html">Ma veille Technologique</a>      
+    </nav> 
+
+    
+
+    <div class="container2">
+        <img src="images/gsb3a.jpg" width="300" height="200"> 
+        <img src="images/GSB 3.png" width="500" height="400"> 
+        <img src="images/gsb3b.jpg" width="350" height="300"> 
+        
+        <h1> </br>&nbsp;&nbsp; Présentation GSB 3  </h1> 
+        &nbsp;&nbsp; GSB 3, proche des utilisations de GSB2, l'application ici est entièrement codée en language PHP, nottament avec le framework, CodeIgniter. 
+        C'est une application&nbsp;&nbsp;&nbsp;&nbsp; permettant à des visiteurs médicaux de s'inscrire à des conférences. Le responsable aura alors accès à l'ensemble des informations.
+
+        <h1> </br> &nbsp;&nbsp; Informations  </h1>
+        &nbsp;&nbsp;  <b>Languages utilisés : </b> PHP, HTML, CSS avec le framework CodeIgniter. </br>
+        &nbsp;&nbsp; <b>Date : </b> Février & Mars 2022
+        &nbsp;&nbsp; <b>Réalisé avec :</b> Chaïma Ouertani
+ </br> </br>  <h1>&nbsp;&nbsp;Compétences &#128187;
+</h1>
+
+  
+
+</br> &nbsp;&nbsp;&nbsp;&nbsp;- Organiser son développement professionnel
+</br>   &nbsp;&nbsp;&nbsp;&nbsp;- Travailler en mode projet
+</br>   &nbsp;&nbsp;&nbsp;&nbsp;- Développer la présence en ligne de l’organisation
+</br> </br> </br> 
+         </div>
+
+        
+    </div>
+
+    
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FeuillesDeStyle/style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Présentations - Marco Crotti-Hem</title>
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+});
+
+    </script>
+    <!-- Menu Horizontal-->
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Mon Portfolio</a>
+            <li class="nav-item"><a href="Presentation.html">Présentation</a>
+            <li class="nav-item"><a href="Parcours.html">Mon Parcours</a>
+            <li class="nav-item"><a href="Projets.html">Mes expériences & Projets</a>
+            <li class="nav-item"><a href="AccueilVeille.html">Ma veille Technologique</a>      
+    </nav> 
+
+    
+
+    <div class="container2">
+        <img src="images/sitevitrinea.png" width="400" height="300"> 
+        <img src="images/sitevitrine.png" width="400" height="300"> 
+        <img src="images/sitevitrineb.png" width="375" height="270"> 
+        
+        <h1> </br>&nbsp;&nbsp; Présentation Site Marchand  </h1> 
+        &nbsp;&nbsp; C'est un de mes premiers projets. Ce site statique, de présentations de locations, m'a permis de mettre en oeuvre et d'innover avec les langages du HTML & CSS.
+
+        <h1> </br> &nbsp;&nbsp; Informations  </h1>
+        &nbsp;&nbsp;  <b>Languages utilisés : </b> HTML & CSS </br>
+        &nbsp;&nbsp; <b>Date : </b> Décembre 2020
+        &nbsp;&nbsp; <b>Réalisé avec :</b> Roland Mutaona
+ </br> </br>  <h1>&nbsp;&nbsp;Compétences &#128187;
+</h1>
+
+  
+
+</br> &nbsp;&nbsp;&nbsp;&nbsp;- Organiser son développement professionnel
+</br>   &nbsp;&nbsp;&nbsp;&nbsp;- Travailler en mode projet
+</br>   &nbsp;&nbsp;&nbsp;&nbsp;- Développer la présence en ligne de l’organisation
+</br> </br> </br> 
+         </div>
+
+        
+    </div>
+
+    
+
+
